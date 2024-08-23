@@ -1,0 +1,11 @@
+file.path <- "Walmart.csv"
+data <- read_csv("C:/Users/Share/Downloads/Walmart.csv")
+ggplot(data, aes(x = 'Weekly_Sales')) + 
+  geom_histogram(binwidth = 5000, fill = "black", color = "blue") + 
+  labs(title = "histogram of the Weekly_Sales", x = "Weekly_Sales", y = "frequency")
+
+head(data)  
+ggplot(data, aes(x = Weekly_Sales)) + 
+  geom_histogram(binwidth = 5000, fill = "black", color = "blue") + 
+  labs(title = "Histogram of the Weekly_Sales", x = "Weekly Sales", y = "Frequency") +
+  theme_minimal()
